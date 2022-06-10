@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/heading/Header';
 import {BrowserRouter as router, Routes,Route, BrowserRouter} from 'react-router-dom';
 import Home from './components/home/Home';
+import About from './components/about/About';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' exact element ={<Home />} />
-        {/* <Route  to='/about' element={About}/> */}
+        <Route  path='/about' exact element={<About/>} />
 
       </Routes>
       </BrowserRouter>

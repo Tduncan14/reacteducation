@@ -20,6 +20,7 @@
 header{
     background-color: rgba(255,255,255,0.2);
     margin:0 30px;
+    position:relative;
 }
 
 header ul{
@@ -88,7 +89,7 @@ li{list-style-type:none;}
         font-size:30px;
         position:absolute;
         right:0px;
-        top:20px;
+        top:-20px;
     }
 
 
