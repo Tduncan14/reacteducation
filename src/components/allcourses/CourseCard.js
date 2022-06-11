@@ -46,9 +46,13 @@ const CourseCard = () => {
                           </div>
                       ))}
                     </div>
-                    
                 </div>
             </div>
+            <div className="price">
+                <h3>{val.priceAll} / {val.pricePer}</h3>
+            </div>
+
+            <button class="outline-btn"> Enroll Now !</button>
             </div>
         ))}
 
