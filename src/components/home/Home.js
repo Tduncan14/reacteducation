@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutCard from '../about/AboutCard.js';
+import HAbout from '../heading/HAbout.js';
 import Hero from './hero/Hero.js';
 
 
@@ -15,6 +16,7 @@ const Home = () => {
         <div>
             <Hero />
             <AboutCard />
+            <HAbout />
         </div>
     )
 }
