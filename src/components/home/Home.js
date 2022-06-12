@@ -24,6 +24,7 @@ const Home = () => {
             <Testimonial />
             <Hblog />
             <Hprice/>
+            
         </div>
     )
 }
