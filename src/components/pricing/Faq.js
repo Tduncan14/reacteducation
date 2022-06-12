@@ -1,14 +1,27 @@
-import React, { forwardRef } from 'react';
+import React, { useState } from 'react';
 import { faq } from '../../dummydata';
 import Title from '../title/Title';
-
+import './price.css'
 
 
 const Faq = () => {
 
 
 
+    const [click,setClick] = useState(false)
 
+
+
+    const toggle = (index) => {
+
+
+
+        if(click === index) {
+            return setClick(null)
+        }
+
+        setClick(index)
+    }
 
 
     return (
@@ -17,15 +30,21 @@ const Faq = () => {
 
           <div className="container">
              {faq.map((val,index) =>(
-                <div  key={index}className="box">
+                <div  key={index} className="box faq">
 
-                 <button>
+                 <button className="accordion" onClick={() => toggle(index)} key={index}>
                     <h2>{val.title}</h2>
-                 </button>
 
-                 <div className="text">
-                    <p>{val.desc}</p>
-                 </div>
+                    <span>{click === index ? <i className="fa fa-chevron-down"></i> : <i className="fa fa-chevron-right"></i> } </span>
+
+                 </button>
+                {click === index ? (
+                      <div className="text">
+                      <p>{val.desc}</p>
+                   </div>
+                ):(
+                  null
+                )}
                </div>
              ))}
           </div>

@@ -43,8 +43,30 @@
 .faq button{
     padding:0;
     margin:0;
+    margin-top:20px;
     display:flex;
     justify-content: space-between;
     width:100%;
     padding:15px 20px;
+}
+
+
+.faq h2{
+    font-weight:500;
+}
+
+
+
+.faq p{
+    padding:20px;
+}
+
+
+.faq .accordion {
+    transition: 0.5s;
+}
+
+.faq .accordion:hover{
+     background-color:#1eb2a6;
+     color:#fff;
 }
