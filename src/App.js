@@ -10,6 +10,7 @@ import Testimonial from './components/testimonial/Testimonial';
 import Price from './components/pricing/Price';
 import Blog from './components/blog/Blog';
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 
 
 function App() {
@@ -26,9 +27,9 @@ function App() {
         <Route path="/pricing"  exact element={<Price/>} />
         <Route path="/journal" exact element={<Blog />} />
         <Route path="/contact" exact element={<Contact />} />
- 
 
       </Routes>
+      <Footer/>
       </BrowserRouter>
     </div>
   );

@@ -57,7 +57,7 @@ const Contact = () => {
 
                             <input type="text" placeholder="Subject" />
 
-                            <textarea cols="30" row='10'  value=""></textarea>
+                            <textarea cols="30" row='10'  value=""/>
                             
                                
                          

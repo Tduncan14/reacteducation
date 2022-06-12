@@ -18,7 +18,7 @@
 
 .contact textarea,
 .contact input{
-    width:100%;
+    width:100% ;
     padding:15px;
     margin-top:20px;
     margin-bottom:15px;
@@ -26,6 +26,9 @@
     border:1px solid grey;
 }
 
+textarea{
+  height:30vh;
+}
 .space{
     margin-right:15px;
 }
@@ -43,4 +46,29 @@
     font-weight:600;
     font-size:15px;
     word-spacing:5px;
+}
+
+
+
+@media screen and (max-width:768px){
+
+
+    .contact .container{
+        flex-direction:column;
+    }
+
+
+    .contact iframe{
+        height:50vh;
+    }
+
+
+
+    .contact .row{
+        width:100%;
+    }
+
+ 
+
+
 }
