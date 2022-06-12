@@ -6,6 +6,7 @@ import Home from './components/home/Home';
 import About from './components/about/About';
 import CoursesHome from './components/allcourses/CoursesHome';
 import Team from './components/team/Team';
+import Testimonial from './components/testimonial/Testimonial';
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
         <Route path='/' exact element ={<Home />} />
         <Route  path='/about' exact element={<About/>} />
         <Route path="/courses" exact element={<CoursesHome/>} />
-        <Route path="/team" excact element={<Team />} />
+        <Route path="/team" exact element={<Team />} />
+        <Route path="/testimonial" exact element={<Testimonial />} />
 
       </Routes>
       </BrowserRouter>
