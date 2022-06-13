@@ -15,7 +15,7 @@ const Head = () => {
          <section className="head">
               <div className="container flexSB">
                   <div className="log">
-                      <h1> Academia</h1>
+                      <h1> Ulearn</h1>
                       <span> Online education & learning</span>
                   </div>
 
